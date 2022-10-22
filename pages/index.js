@@ -20,13 +20,13 @@ export default function Home() {
           href="https://al-drake.netlify.app/"
           target="_blank"
           rel="noopener noreferrer">
-          Made with ❤️ by{" AL Drake"}
+          Made with ❤️ by{" AL Drake "}
           <span>
             <Image
               src={drake}
               alt="Drake photo"
-              width={72}
-              height={72}
+              width={32}
+              height={32}
             />
           </span>
         </a>
