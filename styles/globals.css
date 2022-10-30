@@ -7,6 +7,6 @@
         @apply hover:underline cursor-pointer
     }
     .g-btn{
-        @apply bg-[#f8f9fa] rounded-md p-3 text-sm text-gray-800 hover:ring-1 hover:ring-gray-200 focus:outline-none active:ring-gray-300
+        @apply bg-[#f8f9fa] rounded-md p-3 text-sm text-gray-800 hover:ring-1 hover:ring-gray-200 focus:outline-none active:ring-gray-300 cursor-pointer
     }
 }
