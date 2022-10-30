@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import drake from "../assets/ALDrake.png"
-import Header from '../components/Header';
+import Head from "next/head";
+import Image from "next/image";
+import drake from "../assets/ALDrake.png";
+import Header from "../components/Header";
+import { SearchIcon, MicrophoneIcon } from "@heroicons/react/solid";
 
 export default function Home() {
   return (
@@ -12,8 +13,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>
+      <Header />
+
       {/* <Body/> */}
+
+      <form className="flex flex-col items-center mt-40">
+        <Image
+          width="300"
+          height="100"
+          objectFit="cover"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+          alt="Google-Image"
+          className=""
+        />
+        <div className="flex w-full mt-5 mx-auto max-w-[90%] border border-gray-200 hover:shadow-lg focus-within:shadow-lg px-5 py-3 items-center rounded-full sm:max-w-xl lg:max-w-2xl">
+          <SearchIcon className="h-5 text-gray-500 mr-3" />
+          <input type="text" className="flex-grow focus:outline-none" />
+          <MicrophoneIcon className="h-5" />
+        </div>
+        <div className="flex flex-col sm:flex-row w-[50%] space-y-2 sm:space-y-0 sm:space-x-4 mt-8 justify-center">
+          <button className="g-btn">Google Search</button>
+          <button className="g-btn"> I'm Feeling Lucky </button>
+        </div>
+      </form>
 
       <footer className="flex items-center justify-center h-screen">
         <a
@@ -22,12 +44,7 @@ export default function Home() {
           rel="noopener noreferrer">
           Made with ❤️ by{" AL Drake "}
           <span>
-            <Image
-              src={drake}
-              alt="Drake photo"
-              width={32}
-              height={32}
-            />
+            <Image src={drake} alt="Drake photo" width={32} height={32} />
           </span>
         </a>
       </footer>

@@ -9,7 +9,7 @@ export default function Header() {
       </div>
       <div className="flex space-x-4 items-center">
         <p className="link">Gmail</p>
-        <p className="link">images</p>
+        <p className="link">Images</p>
         <User/>
       </div>
     </header>
